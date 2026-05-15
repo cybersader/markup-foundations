@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 360" width="1200" height="360" role="img" aria-label="markup-foundations — first principles of markup for content authoring">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fdfcfb"/>
+      <stop offset="100%" stop-color="#f3f4f8"/>
+    </linearGradient>
+    <linearGradient id="stripe" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%"  stop-color="#ef4444"/>
+      <stop offset="20%" stop-color="#f97316"/>
+      <stop offset="40%" stop-color="#eab308"/>
+      <stop offset="60%" stop-color="#22c55e"/>
+      <stop offset="80%" stop-color="#3b82f6"/>
+      <stop offset="100%" stop-color="#a855f7"/>
+    </linearGradient>
+    <filter id="glow" x="-80%" y="-80%" width="260%" height="260%">
+      <feGaussianBlur stdDeviation="3.5" result="b"/>
+      <feMerge>
+        <feMergeNode in="b"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <style><![CDATA[
+      .wm    { font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; font-weight: 700; }
+      .tag   { font-family: ui-monospace, "SF Mono", Consolas, "Liberation Mono", "Courier New", monospace; font-weight: 600; letter-spacing: 0.22em; }
+      .label { font-family: ui-monospace, "SF Mono", Consolas, monospace; font-weight: 700; letter-spacing: 0.18em; }
+    ]]></style>
+  </defs>
+
+  <rect width="1200" height="360" fill="url(#bg)"/>
+
+  <!-- Subtle corner accents -->
+  <g stroke="#d4d8df" stroke-width="1.5" fill="none" opacity="0.7">
+    <path d="M 24 24 L 24 56 M 24 24 L 56 24"/>
+    <path d="M 1176 24 L 1176 56 M 1176 24 L 1144 24"/>
+    <path d="M 24 336 L 24 304 M 24 336 L 56 336"/>
+    <path d="M 1176 336 L 1176 304 M 1176 336 L 1144 336"/>
+  </g>
+
+  <!-- Logo (copied from assets/logo.svg, scaled and centered) -->
+  <g transform="translate(530, 24) scale(0.137)" fill="#243040">
+    <path d="M 511.8 406.791 C 513.445 407.958 521.425 416.455 523.222 418.293 L 548.717 444.138 C 577.559 473.612 606.566 502.924 635.736 532.073 C 619.981 531.836 603.856 532.108 588.04 531.995 L 588.065 614.586 C 588.065 629.296 587.663 646.462 588.286 661.023 L 661.513 660.953 L 661.381 694.965 C 646.113 694.483 629.2 694.742 613.837 694.683 L 512.375 694.723 L 362.52 694.911 C 362.618 683.521 362.623 672.13 362.533 660.739 C 370.011 661.357 381.722 661.013 389.58 661.004 L 435.976 661.044 C 436.568 618.46 436.028 574.619 436.014 531.951 C 421.05 532.535 403.587 532.049 388.393 532.029 C 402.209 517.444 418.237 502.077 432.494 487.655 L 511.8 406.791 Z M 469.47 497.324 C 469.604 540.069 469.642 614.796 469.535 660.266 C 469.726 660.466 469.918 660.666 470.11 660.866 C 478.567 660.671 486.714 660.97 495.126 661.002 L 495.123 528.502 L 495.121 490.017 C 495.12 486.445 495.337 474.354 494.947 471.468 C 488.129 477.88 476.109 490.296 469.47 497.324 Z M 529.014 661.015 C 537.491 660.928 545.968 660.93 554.444 661.021 L 554.522 497.863 C 549.69 492.236 543.556 486.445 538.338 481.07 C 536.448 479.123 530.757 473.185 528.846 471.658 L 529.014 661.015 Z"/>
+    <path d="M 512.06 319.931 L 541.04 286.497 C 543.517 283.655 555.387 269.085 557.682 268.932 C 567.587 268.273 578.085 268.973 588.179 268.588 C 587.331 313.136 588.533 358.02 588.059 402.603 C 587.917 415.948 587.831 429.82 588.371 443.132 C 577.738 432.493 564.369 420.021 554.481 409.191 C 554.175 393.94 554.394 377.937 554.367 362.625 C 554.229 349.574 553.761 334.14 554.298 321.258 C 540.414 337.572 525.731 353.462 512.288 370.166 C 507.071 364.728 501.171 357.197 496.042 351.418 C 487.173 341.425 478.232 331.278 469.597 321.089 L 469.745 409.032 L 436.215 442.476 C 435.498 426.927 436.229 409.358 436.024 393.594 C 435.486 352.227 436.813 309.831 435.87 268.558 C 441.608 269.157 461.94 268.933 468.062 268.712 C 473.123 275.678 480.672 284.005 486.37 290.596 C 494.764 300.305 503.382 310.511 512.06 319.931 Z"/>
+    <path d="M 317.983 721.85 C 326.11 721.019 342.529 721.524 351.271 721.53 L 415.629 721.577 L 624.662 721.583 L 679.535 721.597 C 687.234 721.598 699.122 722.302 706.322 721.46 C 705.757 730.727 706.198 745.78 706.249 755.278 C 699.474 755.744 684.614 755.174 676.997 755.162 L 612.5 755.121 L 409.069 755.12 L 347.834 755.112 C 340.884 755.11 324.089 754.652 317.849 755.413 C 318.347 745.606 317.985 731.956 317.983 721.85 Z"/>
+    <path d="M 617.091 378.677 C 621.028 380.406 646.842 403.788 651.742 407.999 L 767.643 507.86 L 644.822 613.116 C 635.46 621.164 626.478 629.359 616.912 637.196 C 617.342 624.444 617.565 605.905 616.89 593.321 C 626.164 584.19 639.996 573.005 650.173 564.228 L 716.073 507.886 C 699.577 494.224 680.96 477.458 664.753 463.271 L 617.152 422.306 C 616.748 408.441 617.115 392.746 617.091 378.677 Z"/>
+    <path d="M 406.404 378.421 C 407.542 379.832 406.909 417.063 406.832 422.172 C 402.779 426.406 389.117 437.639 384.208 441.876 L 334.767 484.472 C 326.732 491.366 315.177 500.524 307.894 507.781 C 329.318 525.508 350.914 544.602 372.024 562.806 L 392.163 580.177 C 397.021 584.303 402.685 588.774 407.056 593.247 C 406.774 607.769 407.105 622.472 406.928 637.052 C 399.145 629.842 388.687 621.003 380.507 614.171 C 348.83 585.877 315.414 558.624 283.479 530.592 C 274.717 522.901 265.458 515.563 256.801 507.758 C 262.536 503.368 270.461 495.935 276.109 491.04 L 310.127 461.913 C 341.973 434.537 375.296 406.474 406.404 378.421 Z"/>
+  </g>
+
+  <!-- Wordmark -->
+  <text x="600" y="222" text-anchor="middle" class="wm" font-size="48" fill="#0d1117">markup-foundations</text>
+
+  <!-- Tagline -->
+  <text x="600" y="252" text-anchor="middle" class="tag" font-size="11" fill="#6e7681">
+    FIRST PRINCIPLES · CONTENT AUTHORING · DURABLE MARKUP
+  </text>
+
+  <!-- Gradient bar -->
+  <rect x="240" y="298" width="720" height="3" fill="url(#stripe)" rx="1.5"/>
+
+  <!-- Zone dots, pulse in sequence -->
+  <g>
+    <circle cx="240" cy="299.5" r="9" fill="#ef4444" filter="url(#glow)">
+      <animate attributeName="r" values="9;13;9" dur="3.6s" begin="0s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="1;0.55;1" dur="3.6s" begin="0s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="384" cy="299.5" r="9" fill="#f97316" filter="url(#glow)">
+      <animate attributeName="r" values="9;13;9" dur="3.6s" begin="0.6s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="1;0.55;1" dur="3.6s" begin="0.6s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="528" cy="299.5" r="9" fill="#eab308" filter="url(#glow)">
+      <animate attributeName="r" values="9;13;9" dur="3.6s" begin="1.2s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="1;0.55;1" dur="3.6s" begin="1.2s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="672" cy="299.5" r="9" fill="#22c55e" filter="url(#glow)">
+      <animate attributeName="r" values="9;13;9" dur="3.6s" begin="1.8s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="1;0.55;1" dur="3.6s" begin="1.8s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="816" cy="299.5" r="9" fill="#3b82f6" filter="url(#glow)">
+      <animate attributeName="r" values="9;13;9" dur="3.6s" begin="2.4s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="1;0.55;1" dur="3.6s" begin="2.4s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="960" cy="299.5" r="9" fill="#a855f7" filter="url(#glow)">
+      <animate attributeName="r" values="9;13;9" dur="3.6s" begin="3s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="1;0.55;1" dur="3.6s" begin="3s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+
+  <!-- HOT / COLD labels -->
+  <text x="200" y="304" text-anchor="end" class="label" font-size="11" fill="#6e7681">HOT</text>
+  <text x="1000" y="304" text-anchor="start" class="label" font-size="11" fill="#6e7681">COLD</text>
+</svg>
