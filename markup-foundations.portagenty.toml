@@ -1,0 +1,11 @@
+# Workspace file for portagenty. See:
+# https://cybersader.github.io/portagenty/reference/schema/
+name = "markup-foundations"
+id = "6308a147-eee6-4c26-b2bf-b927cddcd6e1"
+multiplexer = "zellij"
+
+[[session]]
+name = "shell"
+cwd = "."
+command = "bash"
+kind = "shell"

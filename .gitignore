@@ -1,0 +1,24 @@
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor temp files
+*.swp
+*.swo
+*~
+
+# Obsidian workspace state (per-machine, leaks paths)
+.obsidian/workspace*.json
+.obsidian/cache
+.obsidian/plugins/*/data.json
+
+# Claude Code runtime state (not content)
+.claude/scheduled_tasks.lock
+.claude/plans/
+.claude/cache/
+
+# Local search indexes
+.ck/
+
+# Hot session focus (per-session, don't commit)
+task_plan.md
