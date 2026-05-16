@@ -4,7 +4,7 @@
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/logo-dark.svg">
-  <img src="assets/logo.svg" alt="markup-foundations" width="200">
+  <img src="assets/logo.svg" alt="markup-foundations" width="500">
 </picture>
 
 # markup-foundations
